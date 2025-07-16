@@ -1,7 +1,13 @@
 # Pong Test Run
 
+Make sure to read the contributors guide before contributing.
+
 Required Software:
 [Godot v4.4.1](https://godotengine.org/download/)
+
+Recommended software (if you aren't sure what to pick):
+- Git: [Github Desktop](https://desktop.github.com/download/)
+- Editor: [VSCode](https://code.visualstudio.com/)
 
 ### Guides:
 
