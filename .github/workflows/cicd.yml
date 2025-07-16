@@ -2,6 +2,8 @@
 
 name: CI / CD
 
+env:
+  GODOT_VERSION: 4.4.1
 # Whenever a tag push matching pattern "v*" then run the job
 on:
   push:
@@ -28,54 +30,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: checkout
         uses: actions/checkout@v4
-
-      - name: find latest godot patch for project version
-        run: |
-          # Read the version number from the project.godot file
-          version_prefix=$(grep -oP 'config/features=PackedStringArray\("\K[^\"]+' ./src/project.godot)
-
-          echo found minor version: ${version_prefix}
-          # Initialize the patch number and the last valid version variable
-          patch_number=1
-          last_valid_version=""
-
-          # Loop to increment the patch number and check the website response
-          while true; do
-              # Construct the version string
-              version="${version_prefix}.${patch_number}"
-              
-              # Make the website request
-              echo "Trying to download version $version ..."
-              response=$(curl -o /dev/null -s -w "%{http_code}\n" "https://godotengine.org/download/archive/${version}-stable")
-              # response=$(curl -o /dev/null -s -w "%{http_code}\n" "https://downloads.tuxfamily.org/godotengine/${version}")
-
-              # Check the response code
-              if [ "$response" = "404" ]; then
-                  # If 404 is received, break the loop
-                  echo "Version $version not found."
-                  break
-              else
-                  # If the response is not 404, store the version and increment the patch number
-                  echo "Version $version found... Trying next version..."
-                  last_valid_version=$version
-                  ((patch_number++))
-              fi
-          done
-
-          # Output the last valid version to environment.
-          # Godot's patchless versions aren't suffixed with .0, hence the following.
-
-          if [[ "$last_valid_version" = "*.0" ]]; then
-            echo Writing "GODOT_VERSION=$version_prefix" to env
-            echo "GODOT_VERSION=$version_prefix" >> $GITHUB_ENV
-          else
-            echo Writing "GODOT_VERSION=$last_valid_version" to env
-            echo "GODOT_VERSION=$last_valid_version" >> $GITHUB_ENV
-          fi
-
-      - name: debug print GODOT_VERSION
-        run: |
-          echo Godot version: ${{ env.GODOT_VERSION }}
 
       - name: unit tests with godot gut
         if: ${{ !env.is_release }}
