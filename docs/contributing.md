@@ -80,10 +80,9 @@ Please [write a great commit message](https://chris.beams.io/posts/git-commit/).
 1. Use the imperative mood in the subject line (example: "Fix networking issue")
 1. Wrap the body at about 72 characters
 1. Use the body to explain **why**, *not what and how* (the code shows that!)
-1. If applicable, prefix the title with the relevant component name. (examples: "[Docs] Fix typo", "[Profile] Fix missing avatar") :construction: ( WILL WE HAVE TAGS? )
 
 ```
-[TAG] Short summary of changes in 50 chars or less
+Short summary of changes in 50 chars or less
 
 Add a more detailed explanation here, if necessary. Possibly give 
 some background about the issue being fixed, etc. The body of the 
