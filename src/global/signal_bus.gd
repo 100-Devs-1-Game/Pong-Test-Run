@@ -136,7 +136,6 @@ func _log(message: String) -> void:
 
 func _validate_emit_source() -> void:
     assert(_signal_emitted_from_bus, "Signal wasn't emiited from bus")
-    print(1)
     _signal_emitted_from_bus = false
 
 func _set_bus_emit(new_val: bool) -> void:
