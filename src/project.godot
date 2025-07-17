@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 SignalBus="*res://global/signal_bus.gd"
-Logger="*res://global/logger.gd"
 
 [editor_plugins]
 

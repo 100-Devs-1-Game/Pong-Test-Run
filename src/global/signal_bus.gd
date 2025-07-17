@@ -124,12 +124,11 @@ func _try_log(message: String) -> void:
     
     _log(message)
 
+@warning_ignore("unused_parameter")
 func _log(message: String) -> void:
-    const LOG_SOURCE_NAME := "SignalBus"
-    Logger.add_log(
-        LOG_SOURCE_NAME,
-        message
-    )
+    pass
+    #const LOG_SOURCE_NAME := "SignalBus"
+    #TODO add logger functionality
 
 #endregion
 
