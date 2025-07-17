@@ -80,6 +80,7 @@ func bus_connect(sig:Signal, method:Callable) -> void:
     
     sig.connect(method)
 
+## Emits bus signal. Use this instead of signal.emit
 func bus_emit(
         sig: Signal, 
         signal_data: BaseSignalData = null
@@ -135,7 +136,7 @@ func _log(message: String) -> void:
 #region ======================== PRIVATE METHODS ===============================
 
 func _validate_emit_source() -> void:
-    assert(_signal_emitted_from_bus, "Signal wasn't emiited from bus")
+    assert(_signal_emitted_from_bus, "Signal wasn't emitted from bus")
     _signal_emitted_from_bus = false
 
 func _set_bus_emit(new_val: bool) -> void:
