@@ -33,7 +33,7 @@ jobs:
 
       - name: unit tests with godot gut
         if: ${{ !env.is_release }}
-        uses: ceceppa/godot-gut-ci@main
+        uses: 100-Devs-1-Game/godot-gut-ci@fix/import-gut
         with:
           godot_version: ${{ env.GODOT_VERSION }}
           gut_params: -gdir=res://tests/unit
