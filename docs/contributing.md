@@ -25,8 +25,6 @@ A great way to contribute to the project is to send a detailed issue when you en
 
 In short, since you are most likely a developer, **provide a ticket that you would like to receive**.
 
-- **Review the documentation** before opening a new issue.  :construction: ( WILL THERE BE DOCUMENTATION? )
-
 - **Do not open a duplicate issue!** Search through existing issues to see if your issue has previously been reported. If your issue exists, comment with any additional information you have. You may simply note "I have this problem too", which helps prioritize the most common problems and requests. 
 
 - **Prefer using [reactions](https://github.blog/2016-03-10-add-reactions-to-pull-requests-issues-and-comments/)**, not comments, if you simply want to "+1" an existing issue.
@@ -58,8 +56,6 @@ For most contributions, after your first pull request is accepted and merged, yo
 - **Include test coverage.** Add unit tests or UI tests when possible. Follow existing patterns for implementing tests.
 
 - **Update the example project** if one exists to exercise any new functionality you have added.
-
-- **Add documentation.** Document your changes with code doc comments or in existing guides. :construction:( APPLIES TO US? )
 
 - **Update the CHANGELOG** for all enhancements and bug fixes. Include the corresponding issue number if one exists, and your GitHub username. (example: "- Fixed crash in profile view. #123 @jessesquires")
 
