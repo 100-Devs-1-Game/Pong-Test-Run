@@ -130,7 +130,7 @@ Consistency is the most important. Following the existing style, formatting, and
 
 When possible, style and format will be enforced with a linter.
 
-## :medal_sports: Certificate of Origin :construction: ( LEAVE THAT IN HERE AS IS? )
+## :medal_sports: Certificate of Origin
 
 *Developer's Certificate of Origin 1.1*
 
