@@ -12,6 +12,7 @@ func get_vertical_input() -> float:
         - Input.get_action_raw_strength("paddle_move_up")
     )
 
+
 func get_tilt_input() -> float:
     return (
         Input.get_action_strength("paddle_tilt_down") - Input.get_action_strength("paddle_tilt_up")
