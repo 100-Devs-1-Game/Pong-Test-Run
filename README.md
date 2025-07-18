@@ -10,11 +10,13 @@ For Programmers:
 TL;DR:
 - Install Python
 - Use Command Line `pip3 install "gdtoolkit==4.*"`
- 
+
+ For VSCode users:
+ [GDScript Formatter and Linter Extension](https://marketplace.visualstudio.com/items?itemName=EddieDover.gdscript-formatter-linter)
 
 Recommended software (if you aren't sure what to pick):
 - Git: [Github Desktop](https://desktop.github.com/download/)
-- Editor: [VSCode](https://code.visualstudio.com/)
+- Editor: [VSCode](https://code.visualstudio.com/) full IDE with advanced functionality compared to the Godot Editor, but needs to be configured properly
 
 ### Guides:
 
