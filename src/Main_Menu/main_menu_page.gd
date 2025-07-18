@@ -13,16 +13,17 @@ func _ready() -> void:
 func _on_play_button_down():
     EventBus.main_menu_play_button_clicked.emit()
     print("Play button on main menu clicked")
-    if game_scene:
-        get_tree().change_scene_to_packed(game_scene)
-    else:
-        print("no game cene to change to!!")
+    scene_change(game_scene)
 
 
 func _on_settings_button_down():
     EventBus.main_menu_settings_button_clicked.emit()
     print("Settings button on main menu clicked")
-    if setting_scene:
-        get_tree().change_scene_to_packed(setting_scene)
+    scene_change(setting_scene)
+
+
+func scene_change(scene_to_change: PackedScene) -> void:
+    if scene_to_change:
+        get_tree().change_scene_to_packed(scene_to_change)
     else:
-        print("no Setting scene to change to!!")
+        print("Scene not set")
