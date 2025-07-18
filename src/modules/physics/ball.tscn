@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://521ofgp5li4g"]
+[gd_scene load_steps=3 format=3 uid="uid://521ofgp5li4g"]
 
 [ext_resource type="Script" uid="uid://ca6numq5vl55c" path="res://modules/physics/ball.gd" id="1_r30hw"]
+[ext_resource type="Texture2D" uid="uid://bhvk108rnfbec" path="res://modules/physics/assets/ball.png" id="2_scn7o"]
 
 [node name="Ball" type="Node2D"]
 script = ExtResource("1_r30hw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_scn7o")
