@@ -1,4 +1,4 @@
-# Pong Test Run
+# 100 Devs - 1 Game - Pong Test Run
 
 Make sure to read the contributors guide before contributing.
 
