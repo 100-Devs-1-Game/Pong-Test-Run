@@ -35,7 +35,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 EventBus="*res://global/event_bus.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 FmodManager="*res://addons/fmod/FmodManager.gd"
 
 [debug_draw_3d]
