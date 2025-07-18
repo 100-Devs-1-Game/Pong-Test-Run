@@ -4,19 +4,23 @@ Make sure to read the contributors guide before contributing.
 
 Required Software:
 [Godot v4.4.1](https://godotengine.org/download/)
+[Git LFS](https://git-lfs.com/)
+- Install Git LFS
+- Run the `git lfs install` command anywhere
+- Before adding large files make sure the extensions are within the `.gitattributes` file (or ask a programmer)
+- Keep using git like usual
 
-For Programmers:
+## For Programmers
 [GDToolkit](https://github.com/Scony/godot-gdscript-toolkit?tab=readme-ov-file#installation)  ( Requires Python )
-TL;DR:
 - Install Python
 - Use Command Line `pip3 install "gdtoolkit==4.*"`
-
- For VSCode users:
- [GDScript Formatter and Linter Extension](https://marketplace.visualstudio.com/items?itemName=EddieDover.gdscript-formatter-linter)
 
 Recommended software (if you aren't sure what to pick):
 - Git: [Github Desktop](https://desktop.github.com/download/)
 - Editor: [VSCode](https://code.visualstudio.com/) full IDE with advanced functionality compared to the Godot Editor, but needs to be configured properly
+
+For VSCode users:
+[GDScript Formatter and Linter Extension](https://marketplace.visualstudio.com/items?itemName=EddieDover.gdscript-formatter-linter)
 
 ### Guides:
 
