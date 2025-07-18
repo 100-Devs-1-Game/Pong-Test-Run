@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbki6q751t10x"]
-
-[ext_resource type="Script" uid="uid://bxmgsre13sgn" path="res://modules/physics/paddle.gd" id="1_0ukoy"]
-
-[node name="Paddle" type="Node2D"]
-script = ExtResource("1_0ukoy")
