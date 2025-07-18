@@ -41,9 +41,18 @@ FmodManager="*res://addons/fmod/FmodManager.gd"
 
 settings/addon_root_folder="res://addons/debug_draw_3d"
 
+[dialogic]
+
+directories/dch_directory={
+"example": "res://example.dch"
+}
+directories/dtl_directory={
+"example": "res://example.dtl"
+}
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/gut/plugin.cfg", "res://addons/fmod/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/fmod/plugin.cfg", "res://addons/gdLinter/plugin.cfg", "res://addons/gut/plugin.cfg")
 
 [input]
 
